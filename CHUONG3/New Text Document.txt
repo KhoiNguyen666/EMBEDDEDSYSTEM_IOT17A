@@ -1,0 +1,7 @@
+if(buttons[i]=='1') {
+          ioctl(fd,ON,i);
+
+        }
+        else{
+        ioctl(fd,OFF,i);
+            }

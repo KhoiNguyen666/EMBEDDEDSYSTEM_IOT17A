@@ -1,0 +1,160 @@
+ if(buttons[0]=='1')
+        {
+          for(i=0;i<2;i++){
+            ioctl(fd,ON,0);
+            ioctl(fd,ON,1);
+            ioctl(fd,ON,2);
+            ioctl(fd,ON,3);
+            usleep(500000);
+            ioctl(fd,OFF,0);
+            ioctl(fd,OFF,1);
+            ioctl(fd,OFF,2);
+            ioctl(fd,OFF,3);
+            usleep(500000);
+          }
+        }
+
+        else if(buttons[1]=='1')
+        {
+          for(i=0;i<3;i++)
+          {
+          ioctl(fd, ON, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000); 
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000); 
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 3);
+          }
+        }
+
+        if(buttons[2]=='1')
+        {
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000); 
+          ioctl(fd, ON, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000); 
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, OFF, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, ON, 0); 
+          ioctl(fd, ON, 1);
+          ioctl(fd, ON, 2);
+          ioctl(fd, ON, 3);
+          usleep(500000);
+          ioctl(fd, OFF, 0); 
+          ioctl(fd, OFF, 1);
+          ioctl(fd, OFF, 2);
+          ioctl(fd, OFF, 3);
+        }
+
+        if(buttons[3]=='1')
+        {
+            ioctl(fd,ON,0);
+            ioctl(fd,OFF,1);
+            ioctl(fd,OFF,2);
+            ioctl(fd,OFF,3);
+            usleep(500000);
+            ioctl(fd,ON,0);
+            ioctl(fd,ON,1);
+            ioctl(fd,OFF,2);
+            ioctl(fd,OFF,3);
+            usleep(500000);
+            ioctl(fd,ON,0);
+            ioctl(fd,ON,1);
+            ioctl(fd,ON,2);
+            ioctl(fd,OFF,3);
+            usleep(500000);
+            ioctl(fd,ON,0);
+            ioctl(fd,ON,1);
+            ioctl(fd,ON,2);
+            ioctl(fd,ON,3);
+            usleep(500000);
+            ioctl(fd,OFF,0);
+            ioctl(fd,OFF,1);
+            ioctl(fd,OFF,2);
+            ioctl(fd,OFF,3);
+
+        }
