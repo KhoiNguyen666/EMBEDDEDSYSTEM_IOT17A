@@ -1,0 +1,39 @@
+/* fgetc example: money counter */ #include <stdio.h> 
+int main () 
+{ 
+ FILE * pFile; 
+ int c; 
+ int n = 0; 
+ pFile=fopen ("myfile.txt","r"); 
+ if (pFile==NULL) perror ("Error opening file"); 
+ else 
+ { 
+ do 
+ { 
+ c = fgetc (pFile); 
+ if (c == '$') n++; 
+ } while (c != EOF); 
+ fclose (pFile); 
+ printf ("The file contains %d dollar sign characters ($).\n",n); 
+ } 
+ return 0; 
+}
+Ví dụ 2: Viết chương trình mở file myfile.txt để đọc 100 ký tự dòng đầu tiên và 
+xuất ra màn hình 
+/* fgets example */ 
+#include <stdio.h> 
+int main() 
+{ 
+ FILE * pFile; 
+ char mystring [100]; 
+ pFile = fopen ("myfile.txt" , "r"); 
+ if (pFile == NULL) perror ("Error opening file"); 
+ else 
+ { 
+ if ( fgets (mystring , 100 , pFile) != NULL ) 
+ puts (mystring); 
+ fclose (pFile); 
+ } 
+ return 0; 
+}
+Ví dụ 3: Viết chương trình ghi các ký tự từ A
